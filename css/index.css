@@ -211,3 +211,82 @@ footer h3 {
     text-align: right;
     margin-right: 10%;
 }
+
+/*Media Queries*/
+@media(max-width:800px) {
+    #about {
+        background-position: left;
+    }
+
+    #about div {
+        margin-top: 5%;
+        width: 35%;
+    }
+
+    .container .text div {
+        width: 70%;
+    }
+
+    .imgwrapper {
+        width: 70%;
+    }
+} /*this closes the 800px media query*/
+
+/*phone query*/
+@media(max-width:500px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .links {
+        width: 100%;
+    }
+
+    #about {
+        justify-content: flex-start;
+    }
+
+    #about div {
+        margin-left: 10%;
+        width: 50%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mobile {
+        flex-direction: column-reverse;
+    }
+
+    .container div {
+        width: 80%;
+    }
+
+    .bg {
+        height: 60vh;
+    }
+
+    .footerparent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 80%;
+        margin: 2% 0;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 1%;
+    }
+
+}
